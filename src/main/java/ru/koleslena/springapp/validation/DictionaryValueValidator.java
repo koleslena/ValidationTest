@@ -12,6 +12,8 @@ import javax.validation.ConstraintValidatorContext;
 /**
  * Created by elenko on 14.03.15.
  */
+@Component
+@Scope(value = "prototype")
 public class DictionaryValueValidator implements ConstraintValidator<DictionaryValue, Object> {
 
     @Autowired
